@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+start = "uvicorn custom_loggers.api:app --host 0.0.0.0 --port 8000 --reload"
+
+[packages]
+fastapi = "*"
+"uvicorn[standard]" = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
